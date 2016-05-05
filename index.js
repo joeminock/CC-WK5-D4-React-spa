@@ -18,7 +18,7 @@
 	
 	app.use(express.cookieParser());
 	app.use(express.session({
-		secret: "joeisawesome"
+		secret: config.secret
 	}))
 	
 	var messages = ["this is a message", "this is another message"];
